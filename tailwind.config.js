@@ -21,6 +21,9 @@ module.exports = {
       fontFamily: {
         redHat: ["Red Hat Display", "sans-serif"],
       },
+      fontSize: {
+        heading: "28px",
+      },
       maxWidth: {
         450: "450px",
       },
