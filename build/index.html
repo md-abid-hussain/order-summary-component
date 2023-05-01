@@ -1,61 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Frontend Mentor | Order summary card</title>
-</head>
+  <body
+    class="mx-6 grid min-h-screen place-content-center bg-pale-blue bg-mobile-background bg-contain bg-no-repeat font-redHat text-base sm:bg-desktop-background"
+  >
+    <main class="max-w-450 rounded-2xl bg-white text-center">
+      <figure>
+        <img
+          src="./images/illustration-hero.svg"
+          alt=""
+          class="rounded-t-2xl"
+        />
+      </figure>
+      <section class="px-6 py-9 sm:px-12 sm:py-13">
+        <h1 class="mb-6 text-heading font-black text-custom-dark-blue">
+          Order Summary
+        </h1>
 
-<body
-  class="mx-6 grid min-h-screen place-content-center bg-pale-blue bg-mobile-background bg-contain bg-no-repeat font-redHat text-base sm:bg-desktop-background">
-  <main class="max-w-450 rounded-2xl bg-white text-center">
-    <figure>
-      <img src="./images/illustration-hero.svg" alt="" class="rounded-t-2xl" />
-    </figure>
-    <section class="px-6 py-9 sm:px-12 sm:py-13">
-      <h1 class="mb-6 text-heading font-black text-custom-dark-blue">
-        Order Summary
-      </h1>
+        <p class="mb-7 px-4 font-medium text-unsaturated-blue sm:mb-6 sm:px-6">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
 
-      <p class="mb-7 px-4 font-medium text-unsaturated-blue sm:mb-6 sm:px-6">
-        You can now listen to millions of songs, audiobooks, and podcasts on
-        any device anywhere you like!
-      </p>
-
-      <section class="mb-6 flex items-center justify-between rounded-xl bg-very-pale-blue px-4 py-4 sm:px-6 sm:py-8">
-        <div class="flex items-center gap-4">
-          <img src="./images/icon-music.svg" alt="" />
-          <div>
-            <h2 class="font-black text-custom-dark-blue">Annual Plan</h2>
-            <span class="text-unsaturated-blue">$59.99/year</span>
+        <section
+          class="mb-6 flex items-center justify-between rounded-xl bg-very-pale-blue px-4 py-4 sm:px-6 sm:py-8"
+        >
+          <div class="flex items-center gap-4">
+            <img src="./images/icon-music.svg" alt="" />
+            <div>
+              <h2 class="font-black text-custom-dark-blue">Annual Plan</h2>
+              <span class="text-unsaturated-blue">$59.99/year</span>
+            </div>
           </div>
+
+          <a
+            href="#"
+            class="font-bold text-bright-blue underline hover:no-underline hover:opacity-60"
+            >Change</a
+          >
+        </section>
+
+        <div class="flex flex-col">
+          <a
+            href="#"
+            class="mb-7 rounded-lg bg-bright-blue py-4 font-bold text-white shadow-btn-shadow shadow-custom-shadow hover:opacity-70"
+            >Proceed to Payment</a
+          >
+          <a
+            href="#"
+            class="font-bold text-unsaturated-blue hover:text-custom-dark-blue"
+            >Cancel Order</a
+          >
         </div>
-
-        <a href="#" class="font-bold text-bright-blue underline hover:no-underline hover:opacity-60">Change</a>
       </section>
+    </main>
 
-      <div class="flex flex-col">
-        <a href="#"
-          class="mb-7 rounded-lg bg-bright-blue py-4 font-bold text-white shadow-btn-shadow shadow-custom-shadow hover:opacity-70">Proceed
-          to Payment</a>
-        <a href="#" class="font-bold text-unsaturated-blue hover:text-custom-dark-blue">Cancel Order</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="mt-2 text-center text-[11px] text-unsaturated-blue">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="underline">Frontend Mentor</a>. Coded
-    by
-    <a href="https://www.frontendmentor.io/profile/md-abid-hussain" class="underline">MD Abid Hussain</a>.
-  </footer>
-</body>
-
+    <footer class="mt-2 text-center text-[11px] text-unsaturated-blue">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="underline"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/md-abid-hussain"
+        class="underline"
+        >MD Abid Hussain</a
+      >.
+    </footer>
+  </body>
 </html>
