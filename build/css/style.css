@@ -571,10 +571,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[18px\] {
-  gap: 18px;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -648,11 +644,6 @@ video {
   padding-bottom: 2.25rem;
 }
 
-.py-\[16px\] {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -666,13 +657,13 @@ video {
   line-height: 2rem;
 }
 
+.text-\[11px\] {
+  font-size: 11px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-\[11px\] {
-  font-size: 11px;
 }
 
 .font-black {
@@ -758,18 +749,13 @@ video {
     padding-right: 1.5rem;
   }
 
-  .sm\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .sm\:py-\[52px\] {
-    padding-top: 52px;
-    padding-bottom: 52px;
-  }
-
   .sm\:py-13 {
     padding-top: 52px;
     padding-bottom: 52px;
+  }
+
+  .sm\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
