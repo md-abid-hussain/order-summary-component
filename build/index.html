@@ -4,49 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
-<body>
-  <main>
-    <h1>Order Summary</h1>
+<body
+  class="grid place-content-center min-h-screen text-base font-redHat mx-6 bg-pale-blue bg-mobile-background sm:bg-desktop-background bg-no-repeat bg-contain">
+  <main class="max-w-450 text-center bg-white rounded-2xl">
+    <figure><img src="./images/illustration-hero.svg" alt="" class="rounded-t-2xl"></figure>
+    <section class="px-6 py-9 sm:px-12 sm:py-13">
+      <h1 class="text-2xl mb-6 font-black text-custom-dark-blue">Order Summary</h1>
 
-    <p>You can now listen to millions of songs, audiobooks, and podcasts on any
-      device anywhere you like!</p>
+      <p class="mb-7 sm:mb-6 font-medium px-4 sm:px-6 text-unsaturated-blue">You can now
+        listen to
+        millions of
+        songs,
+        audiobooks,
+        and podcasts on any
+        device anywhere you like!</p>
 
-    <section>
-      <div>
-        <div>
-          <h3>Annual Plan</h3>
-          <span>$59.99/year</span>
+      <section class="flex justify-between px-4 py-4 sm:py-8 sm:px-6 bg-very-pale-blue mb-6 rounded-xl items-center">
+        <div class="flex items-center gap-4">
+          <img src="./images/icon-music.svg" alt="">
+          <div>
+            <h3 class="font-black text-custom-dark-blue">Annual Plan</h3>
+            <span class="text-unsaturated-blue">$59.99/year</span>
+          </div>
         </div>
+
+        <a href="#" class="underline font-bold text-bright-blue hover:no-underline hover:opacity-60">Change</a>
+      </section>
+
+      <div class="flex flex-col">
+        <a href="#"
+          class="py-4 rounded-lg bg-bright-blue mb-7 text-white font-bold hover:opacity-70 shadow-btn-shadow shadow-custom-shadow">Proceed
+          to
+          Payment</a>
+        <a href="#" class="font-bold text-unsaturated-blue hover:text-custom-dark-blue">Cancel Order</a>
       </div>
-
-      <a href="#">Change</a>
     </section>
-
-    <a href="#">Proceed to Payment</a>
-    <a href="#">Cancel Order</a>
   </main>
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+
+  <footer class="text-[11px] text-unsaturated-blue mt-2">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="underline">Frontend
+      Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/md-abid-hussain" class="underline">MD Abid Hussain</a>.
   </footer>
 </body>
 
